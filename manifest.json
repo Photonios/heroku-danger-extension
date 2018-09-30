@@ -1,0 +1,21 @@
+{
+    "name": "Heroku Danger",
+    "version": "1.0",
+    "description": "Warns you when you're on a live/staging env in the Heroku dashboard.",
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["https://dashboard.heroku.com/apps/*"],
+        "js": ["warning.js"]
+    }],
+    "browser_action": {
+        "default_icon": "logo.png"
+    },
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    }
+}
