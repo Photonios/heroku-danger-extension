@@ -21,7 +21,7 @@ function showBar() {
     bar.style.zIndex = 99999;
 
     const text = document.createElement('h1');
-    text.innerText = 'Warning! This is a production or staging environment. Be careful!';
+    text.innerText = 'Warning! This is a production environment. Be careful!';
     text.style.color = 'white';
     text.style.margin = 0;
 
